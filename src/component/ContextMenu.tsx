@@ -1,33 +1,22 @@
-import { useState } from 'react';
+type ContextMenuProps = {
+  menuTop: number;
+  menuLeft: number;
+};
 
-function ContextMenu() {
-  // document.addEventListener('contextmenu', clickEvent);
-  const [display, setDisplay] = useState(false);
-  const [menuTop, setMenuTop] = useState(0);
-  const [menuLeft, setMenuLeft] = useState(0);
-
-  const changeDisplay = (e: MouseEvent) => {
-    e.preventDefault();
-    setMenuLeft(e.pageX);
-    setMenuTop(e.pageY);
-    setDisplay(true);
-  };
-  const onClick = () => {
-    setDisplay(false);
-  };
-  document.addEventListener('contextmenu', changeDisplay);
-  document.addEventListener('click', onClick);
-
+function ContextMenu({ menuTop, menuLeft }: ContextMenuProps) {
   return (
     <div
       style={{
-        display: display ? 'block' : 'none',
+        position: 'absolute',
         top: `${menuTop}px`,
         left: `${menuLeft}px`,
       }}
     >
       <ul>
         <li>메모 추가</li>
+        <li>메모 삭제</li>
+        <li>Hi</li>
+        <li>My</li>
       </ul>
     </div>
   );
