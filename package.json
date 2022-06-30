@@ -1,5 +1,5 @@
 {
-  "name": "ts-memo-app",
+  "name": "react-memo-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -47,5 +47,6 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1",
     "react-scripts": "^5.0.1"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
