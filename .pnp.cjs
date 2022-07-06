@@ -38,6 +38,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:5.30.0"],\
             ["@typescript-eslint/parser", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:5.30.0"],\
+            ["core-js", "npm:3.23.3"],\
+            ["core-js-pure", "npm:3.23.3"],\
             ["eslint", "npm:8.18.0"],\
             ["eslint-config-prettier", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:8.5.0"],\
             ["eslint-plugin-import", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:2.26.0"],\
@@ -14075,6 +14077,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:5.30.0"],\
             ["@typescript-eslint/parser", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:5.30.0"],\
+            ["core-js", "npm:3.23.3"],\
+            ["core-js-pure", "npm:3.23.3"],\
             ["eslint", "npm:8.18.0"],\
             ["eslint-config-prettier", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:8.5.0"],\
             ["eslint-plugin-import", "virtual:102eb60379a82798e4e259f3e4c43f5b9b7e9c4ed94397163d2ed677a9b41abca983c10b66824610c667979ee5ceb24e8f77fe358b83a79b8460a40f097fda20#npm:2.26.0"],\

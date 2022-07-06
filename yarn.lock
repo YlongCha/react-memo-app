@@ -4306,14 +4306,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-pure@npm:^3.20.2, core-js-pure@npm:^3.8.1":
+"core-js-pure@npm:^3.20.2, core-js-pure@npm:^3.23.3, core-js-pure@npm:^3.8.1":
   version: 3.23.3
   resolution: "core-js-pure@npm:3.23.3"
   checksum: 09a477a56963ca4409ca383d36429ea3b51b658ff85e94331a510543c77c4d1b44cb6b305b0f185d729eb059c71f1289c62fdec6371ff46ce838a16988cdcb2e
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.19.2":
+"core-js@npm:^3.19.2, core-js@npm:^3.23.3":
   version: 3.23.3
   resolution: "core-js@npm:3.23.3"
   checksum: f517546388e468bd3155afbf06f38f8fe0448134fe086c4ed9c4d371d52db71e80585073b59362948777e01f2377ef7064925e1a3d9312a1c56da47eadfaca9a
@@ -10089,6 +10089,8 @@ __metadata:
     "@types/react-dom": ^18.0.5
     "@typescript-eslint/eslint-plugin": ^5.30.0
     "@typescript-eslint/parser": ^5.30.0
+    core-js: ^3.23.3
+    core-js-pure: ^3.23.3
     eslint: ^8.18.0
     eslint-config-prettier: ^8.5.0
     eslint-plugin-import: ^2.26.0
