@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css';
-import ContextMenu from './component/ContextMenu';
+import ContextMenu from 'components/contextMenu/ContextMenu';
 
 export default function App() {
   const [display, setDisplay] = useState(false);
