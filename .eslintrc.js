@@ -2,11 +2,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'prettier'],
   extends: [
+    'react-app',
+    'prettier'
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
     'import/extensions': 0,
