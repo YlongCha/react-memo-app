@@ -1,3 +1,7 @@
+import './style.css';
+import { MemoTypes } from 'recoil/memo';
+import { MouseEvent } from 'react';
+
 type ContextMenuProps = {
   menuTop: number;
   menuLeft: number;
@@ -6,22 +10,25 @@ type ContextMenuProps = {
 type Menu = {
   label: string;
   value: string;
+  clicked: (e: MouseEvent<HTMLLIElement>) => void;
 };
 
 function ContextMenu({ menuTop, menuLeft }: ContextMenuProps) {
-  const UNORDERED_STYLE = {
-    backgroundColor: 'whitesmoke',
-    padding: 0,
-    listStyle: 'none',
-    width: '150px',
-  };
-  const LIST_STYLE = {
-    lineHeight: '3',
-    paddingLeft: '5px',
-  };
   const MENU_LIST = [
-    { label: 'Add', value: 'ADD' },
-    { label: 'Delete', value: 'DELETE' },
+    {
+      label: 'Add',
+      value: 'ADD',
+      clicked: (e: MouseEvent<HTMLLIElement>) => {
+        console.log(e);
+      },
+    },
+    {
+      label: 'Delete',
+      value: 'DELETE',
+      clicked: (e: MouseEvent<HTMLLIElement>) => {
+        console.log(e);
+      },
+    },
   ];
 
   return (
@@ -32,9 +39,14 @@ function ContextMenu({ menuTop, menuLeft }: ContextMenuProps) {
         left: `${menuLeft}px`,
       }}
     >
-      <ul style={UNORDERED_STYLE}>
+      <ul className="menu-list">
         {MENU_LIST.map((menu: Menu) => (
-          <li key={menu.value} value={menu.value} style={LIST_STYLE}>
+          <li
+            key={menu.value}
+            className="context-menu"
+            value={menu.value}
+            onMouseDown={menu.clicked}
+          >
             {menu.label}
           </li>
         ))}
