@@ -1,0 +1,60 @@
+.perspective{
+    float: left;
+    margin-bottom: 1.5rem;
+    padding: 0 0.75rem;
+}
+.note{
+    display: grid;
+    grid-template-rows: 15% auto;
+    height: 200px;
+    width: 200px;
+    animation: rotateX 1s ease-out;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    background-color: #fff6bc;
+    box-shadow: 0 1px 0 #b1ab85;
+    padding: 1rem;
+    transform: rotateX(180deg);
+    transform-origin: 0 0;
+    justify-content: center;
+}
+.note input{
+    border:none;
+    border-bottom: inset;
+    outline: none;
+    background-color: #fff6bc;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+.note textarea{
+    border: none;
+    outline: none;
+    background-color: #fff6bc;
+    font-size: 1rem;
+    resize: none;
+    font-family: Consolas, sans-serif;
+}
+.perspective:nth-of-type(2) .note{
+    animation-delay: 0.3s;
+}
+
+.perspective:nth-of-type(3) .note{
+    animation-delay: 0.6s
+}
+.mouse-entered{
+    background-color: #FFF08F;
+}
+@keyframes rotateX{
+    0%{
+        opacity: 0;
+        transform: rotateX(180deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}

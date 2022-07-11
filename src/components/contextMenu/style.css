@@ -1,0 +1,13 @@
+.menu-list{
+    background-color: whitesmoke;
+    padding: 0;
+    list-style: none;
+    width: 150px;
+}
+.context-menu{
+    line-height: 3;
+    padding-left: 5px;
+}
+.context-menu:hover{
+    background: silver;
+}
